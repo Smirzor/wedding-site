@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    {% load static %}
+	<head>
+        <meta charset="utf-8" />
+		<title>{% block title %}{% endblock %}</title>
+		<link href="{% static "mainpage/css/site.css" %}" type="text/css" rel="stylesheet" />		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Lisa <img src="{% static "mainpage/img/header_wedding_rings.png" %}" /> Alex</h1>			
+			<nav>
+				<a href="/venue/">Venue</a>
+				<a href="/accommodation/">Accommodation</a>
+				<a href="/gen-info/">General Info</a>
+				<a href="/taxi/">Taxi</a>
+				<a href="/gifts/">Gifts</a>
+                <a href="/rsvp/">RSVP</a>
+			</nav>	
+		</header>
+		<div id="content">
+        {% block content %}{% endblock %}
+        </div> <!-- content -->       		
+        {% block footer %}{% endblock %}
+	</body>
+</html>
+
+

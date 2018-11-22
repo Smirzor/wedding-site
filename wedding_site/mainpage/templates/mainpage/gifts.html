@@ -1,0 +1,52 @@
+﻿{% extends "mainpage/base.html" %}
+{% load static %}
+
+{% block title %}Gifts{% endblock %}
+{% block content %}
+<style>
+.poem ul, .poem ol
+{
+    list-style-type: none;
+}
+.poem li
+{
+  font-family:Times New Roman;
+  font-style:italic;
+  padding-bottom: 0.1em;
+  padding-top: 0.4em;
+}
+.poem li:first-child::first-letter
+{
+  font-size:26px;
+  font-style:italic;
+  padding-right:3px;  
+}
+</style>
+
+<div class="poem">
+    <ul>
+        <li>We’re tying the knot and we just can’t wait,</li>
+        <li>We knew it would happen on our very first date.</li>
+        <li>As we’ve got our home dressed up with accessories,</li>
+        <li>We don’t really think that a wedding gift list is necessary.</li>
+        <li>But if you did want to give something to help us on our way,</li>
+        <li>Some money towards the honeymoon pot would truly make our day!</li>
+    </ul>
+</div> <!-- poem -->
+<br />
+<br />
+    <p>As we decided not to have wedding gifts but rather have a honeymoon fund.</p> 
+    <p>We set up a registry where you can donate some money towards our honeymoon.</p>
+    <p>We dearly appreciate every donation towards our honeymoon.</p>
+<br />
+<br />
+<div class="contentblock">    
+    <div class="img">
+        <img src="{% static "mainpage/img/presents.png" %}" />
+    </div><!-- img -->
+    <div class="descr" width="250px">
+        <p>If you wish to donate just follow the link >>link<<</p>
+    </div><!-- descr -->
+</div> <!-- contentblock -->
+{% endblock %}
+{% block footer %}{% endblock %}

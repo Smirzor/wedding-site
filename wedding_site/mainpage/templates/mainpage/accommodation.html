@@ -1,0 +1,41 @@
+﻿{% extends "mainpage/base.html" %}
+{% load static %}
+
+{% block title %}Accommodation{% endblock %}
+{% block content %}
+		<div id="accommodation">
+			<p>We will be staying at the Owen House Wedding Barn.<br />Following you can find a list of several close by hotels/B&Bs</p>
+			<p><section id="5min">
+				<h3 class="accHead">Hotels within 5 minutes drive   <img src="{% static "mainpage/img/hotelpin5min_small.png" %}"/></h3>
+				<ul class="accUL">			
+					<li class="accLI"><a id="hotel1_5min" href="">The Roebuck Inn</a></li>
+					<li class="accLI"><a id="hotel2_5min" href="">The Hinton Guest House</a></li>
+				</ul>
+			</section></p>
+			<br />			
+			<p><section id="15min">
+				<h3 class="accHead">Hotels within 15 minutes drive   <img src="{% static "mainpage/img/hotelpin15min_small.png" %}"/></h3>
+				<ul class="accUL">			
+					<li class="accLI"><a id="hotel1_15min" href="">Airport Inn</a></li>
+					<li class="accLI"><a id="hotel2_15min" href="">Holiday Inn Express</a></li>
+					<li class="accLI"><a id="hotel3_15min" href="">Cottons Hotel</a></li>
+                    <li class="accLI"><a id="hotel4_15min" href="">Alderley Edge Hotel</a></li>
+                    <li class="accLI"><a id="hotel5_15min" href="">Premier Inn Knutsford</a></li>
+                    <li class="accLI"><a id="hotel6_15min" href="">Premier Inn MAN Airport</a></li>
+                    <li class="accLI"><a id="hotel7_15min" href="">Travelodge Knutsford (on M6)</a></li>
+				</ul>
+			</section></p>
+			<br />
+			<div id="map"></div>
+		</div> <!-- accommodation -->
+{% endblock %}
+{% block footer %}
+        <!-- Synchronous approach -->
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAz2yNLw9oIBFQcqEcz1OeTG9w2cmnBNHg"></script>		
+            <script src="{% static "mainpage/scripts/map.js" %}"></script>
+
+        <!-- Asynchronous approach 
+            <script src="{% static "mainpage/scripts/map.js" %}"></script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAz2yNLw9oIBFQcqEcz1OeTG9w2cmnBNHg&callback=initMap"></script>		
+         -->
+{% endblock %}

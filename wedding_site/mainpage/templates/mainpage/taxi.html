@@ -1,0 +1,48 @@
+﻿{% extends "mainpage/base.html" %}
+{% load static %}
+
+{% block title %}Booking a Taxi{% endblock %}
+{% block content %}
+			<div id="taxi" class="fill620">
+				<p><img src="{% static "mainpage/img/taxi.png" %}" /></p>
+				
+                <p style="width: 350px;">If you need a Taxi prebooked we recommend one of the following local taxi companies:</p>
+                <p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Telephone</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Amber Cars</td>
+                                <td>+44 1565 650707</td>
+                            </tr>
+                            <tr>
+                                <td>JPS Hire</td>
+                                <td>+44 7742 077865</td>
+                            </tr>
+                            <tr>
+                                <td>Linkline</td>
+                                <td>+44 1565 872726</td>
+                            </tr>
+                            <tr>
+                                <td>Mobberley Private Hire</td>
+                                <td>+44 1565 872299</td>
+                            </tr>
+                            <tr>
+                                <td>Trafford Cars</td>
+                                <td>+44 161 928 1111</td>
+                            </tr>
+                            <tr>
+                                <td>High Legh Cars</td>
+                                <td>+44 7999 801 080</td>
+                            </tr>
+                        </tbody>
+                    </table>
+		        </p>
+            </div> <!-- taxi -->
+{% endblock %}
+{% block footer %}{% endblock %}

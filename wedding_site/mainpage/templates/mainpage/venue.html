@@ -1,0 +1,38 @@
+﻿{% extends "mainpage/base.html" %}
+{% load static %}
+
+{% block title %}Venue Information{% endblock %}
+{% block content %}
+		<div id="venue">
+			<div id="directions" class="fill620">
+				<h3>Directions:</h3>
+				<p>We will be having ceremony and evenening entertainment at Owen House Wedding Barn.</p>
+				<p>OHWB is just 5 minutes away from Manchester Airport and Knutsford.</p>
+				<p>The address is:</p>
+				<p><b>Small Ln, <br />Mobberley <br />WA16 7NY</b></p>
+				<br />
+			</div> <!-- directions -->
+			<div id="barn" class="contentblock">
+				<div class="img"><img src="{% static "mainpage/img/ohwb_inside.png" %}" /></div>
+				<div class="descr">
+					<p>	<b>Owen House Wedding Barn</b> is a venue located 
+						<br />in Mobberley in the heart of the Cheshire countryside. 
+						<br />The barn is a bespoke weddingvenue set on a working 
+						<br />farm that is family run and offers a truly 
+						<br />unique wedding experience.
+					</p>				
+				</div> <!-- descr -->
+
+			</div> <!-- barn -->
+			<div id="ceremony" class="contentblock">
+				<div class="descr">
+					<p>The <b>ceremony</b> will be held at the barn in
+						<br />its fully licensed room. That will be the
+						<br />moment where Lisa has her last chance to reconsider
+						<br />and you will be able to see Alex covered in tears.
+					</p>
+				</div>
+				<div class="img"><img src="{% static "mainpage/img/ohwb_ceremony.png" %}" /></div>
+			</div> <!-- ceremony -->
+		</div> <!-- venue -->
+{% endblock %}

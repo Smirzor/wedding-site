@@ -1,0 +1,30 @@
+﻿{% extends "mainpage/base.html" %}
+{% load static %}
+
+{% block title %}General Info{% endblock %}
+{% block content %}
+
+		<div id="gen_info">
+			<div id="timings" class="fill620">
+				<h3>Placeholder for general schedule of the day</h3>
+				<p>14:00 - Ceremony</p>
+				<p>14:30 - Reception (photoshoot)</p>
+				<p>16:00 - Wedding Breakfast</p>
+				<p>17:30 - Speeches</p>
+				<p>18:00 - Cutting of Cake</p>
+				<p>19:00 - First Dance</p>
+				<p>21:00 - Mini Burgers served</p>
+				<p>23:30 - Last Call for Drinks</p>
+				<p>23:45 - End of Music</p>
+			</div> <!-- timings -->
+    
+			<div id="contact">	
+                    <img id="at" src="{% static "mainpage/img/at_icon.png" %}" />
+					<p> If you have any questions
+						<br />Or if you want to inform us about
+						<br />dietary Requirements please email us
+						<br /><a href="mailto:lisaandalexwedding@outlook.com" target="_top">@ Lisa and Alex</a>
+					</p>
+			</div> <!-- contact -->
+        </div> <!-- gen_info -->
+{% endblock %}
