@@ -1,4 +1,5 @@
 var OHWBmarker;
+var prev_infowindow = false; //temporary variable for last infowindow
 var hotel5min_1; //Roebuck Inn
 var hotel5min_2; //The Hinton Guest House
 var hotel15min_1; //Airport Inn
@@ -182,15 +183,78 @@ $(() => {
  
 
     // click markers to show infotext					
-    hotel5min_1.addListener('click', function () { infW_5min_1.open(map, hotel5min_1); });
-    hotel5min_2.addListener('click', function () { infW_5min_2.open(map, hotel5min_2); });
-    hotel15min_1.addListener('click', function () { infW_15min_1.open(map, hotel15min_1); });
-    hotel15min_2.addListener('click', function () { infW_15min_2.open(map, hotel15min_2); });
-    hotel15min_3.addListener('click', function () { infW_15min_3.open(map, hotel15min_3); });
-    hotel15min_4.addListener('click', function () { infW_15min_4.open(map, hotel15min_4); });
-    hotel15min_5.addListener('click', function () { infW_15min_5.open(map, hotel15min_5); });
-    hotel15min_6.addListener('click', function () { infW_15min_6.open(map, hotel15min_6); });
-    hotel15min_7.addListener('click', function () { infW_15min_7.open(map, hotel15min_7); });
+    hotel5min_1.addListener('click', function () {
+        if (prev_infowindow) {
+            prev_infowindow.close();
+        }
+
+        prev_infowindow = infW_5min_1;
+        infW_5min_1.open(map, hotel5min_1);
+    });
+    hotel5min_2.addListener('click', function () {
+        if (prev_infowindow) {
+            prev_infowindow.close();
+        }
+
+        prev_infowindow = infW_5min_2;
+        infW_5min_2.open(map, hotel5min_2);
+    });
+    hotel15min_1.addListener('click', function () {
+        if (prev_infowindow) {
+            prev_infowindow.close();
+        }
+
+        prev_infowindow = infW_15min_1;
+        infW_15min_1.open(map, hotel15min_1);
+    });
+    hotel15min_2.addListener('click', function () {
+        if (prev_infowindow) {
+            prev_infowindow.close();
+        }
+
+        prev_infowindow = infW_15min_2;
+        infW_15min_2.open(map, hotel15min_2);
+    });
+    hotel15min_3.addListener('click', function () {
+        if (prev_infowindow) {
+            prev_infowindow.close();
+        }
+
+        prev_infowindow = infW_15min_3;
+        infW_15min_3.open(map, hotel15min_3);
+    });
+    hotel15min_4.addListener('click', function () {
+        if (prev_infowindow) {
+            prev_infowindow.close();
+        }
+
+        prev_infowindow = infW_15min_4;
+        infW_15min_4.open(map, hotel15min_4);
+    });
+    hotel15min_5.addListener('click', function () {
+        if (prev_infowindow) {
+            prev_infowindow.close();
+        }
+
+        prev_infowindow = infW_15min_5;
+        infW_15min_5.open(map, hotel15min_5);
+    });
+    hotel15min_6.addListener('click', function () {
+        if (prev_infowindow) {
+            prev_infowindow.close();
+        }
+
+        prev_infowindow = infW_15min_6;
+        infW_15min_6.open(map, hotel15min_6);
+    });
+    hotel15min_7.addListener('click', function () {
+        if (prev_infowindow) {
+            prev_infowindow.close();
+        }
+
+        prev_infowindow = infW_15min_7;
+        infW_15min_7.open(map, hotel15min_7);
+    });
 
 
     // click link to show infotext
@@ -200,15 +264,78 @@ $(() => {
             e.preventDefault(); //To prevent the default anchor tag behavior
         });
     });	
-    $("#hotel1_5min").click(function () { infW_5min_1.open(map, hotel5min_1); });
-    $("#hotel2_5min").click(function () { infW_5min_2.open(map, hotel5min_2); });
-    $("#hotel1_15min").click(function () { infW_15min_1.open(map, hotel15min_1); });
-    $("#hotel2_15min").click(function () { infW_15min_2.open(map, hotel15min_2); });
-    $("#hotel3_15min").click(function () { infW_15min_3.open(map, hotel15min_3); });
-    $("#hotel4_15min").click(function () { infW_15min_4.open(map, hotel15min_4); });
-    $("#hotel5_15min").click(function () { infW_15min_5.open(map, hotel15min_5); });
-    $("#hotel6_15min").click(function () { infW_15min_6.open(map, hotel15min_6); });
-    $("#hotel7_15min").click(function () { infW_15min_7.open(map, hotel15min_7); });
+    $("#hotel1_5min").click(function () {
+        if (prev_infowindow) {
+            prev_infowindow.close();
+        }
+
+        prev_infowindow = infW_5min_1;
+        infW_5min_1.open(map, hotel5min_1);
+    });
+    $("#hotel2_5min").click(function () {
+        if (prev_infowindow) {
+            prev_infowindow.close();
+        }
+
+        prev_infowindow = infW_5min_2;
+        infW_5min_2.open(map, hotel5min_2);
+    });
+    $("#hotel1_15min").click(function () {
+        if (prev_infowindow) {
+            prev_infowindow.close();
+        }
+
+        prev_infowindow = infW_15min_1;
+        infW_15min_1.open(map, hotel15min_1);
+    });
+    $("#hotel2_15min").click(function () {
+        if (prev_infowindow) {
+            prev_infowindow.close();
+        }
+
+        prev_infowindow = infW_15min_2;
+        infW_15min_2.open(map, hotel15min_2);
+    });
+    $("#hotel3_15min").click(function () {
+        if (prev_infowindow) {
+            prev_infowindow.close();
+        }
+
+        prev_infowindow = infW_15min_3;
+        infW_15min_3.open(map, hotel15min_3);
+    });
+    $("#hotel4_15min").click(function () {
+        if (prev_infowindow) {
+            prev_infowindow.close();
+        }
+
+        prev_infowindow = infW_15min_4;
+        infW_15min_4.open(map, hotel15min_4);
+    });
+    $("#hotel5_15min").click(function () {
+        if (prev_infowindow) {
+            prev_infowindow.close();
+        }
+
+        prev_infowindow = infW_15min_5;
+        infW_15min_5.open(map, hotel15min_5);
+    });
+    $("#hotel6_15min").click(function () {
+        if (prev_infowindow) {
+            prev_infowindow.close();
+        }
+
+        prev_infowindow = infW_15min_6;
+        infW_15min_6.open(map, hotel15min_6);
+    });
+    $("#hotel7_15min").click(function () {
+        if (prev_infowindow) {
+            prev_infowindow.close();
+        }
+
+        prev_infowindow = infW_15min_7;
+        infW_15min_7.open(map, hotel15min_7);
+    });
 
 }) 
 
