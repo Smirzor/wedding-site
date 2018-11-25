@@ -10,7 +10,7 @@ var hotel15min_5; //Premier Inn Knutsford
 var hotel15min_6; //Premier Inn Manchester Airport
 var hotel15min_7; //Travelodge Knutsford
 
-function initMap() { } // declre so initMap will be recognized as function in global layer
+function initMap() { } // declare so initMap will be recognized as function in global layer
 
 $(() => {
     var ohwb = {lat: 53.330357, lng: -2.325906}
